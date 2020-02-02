@@ -1,0 +1,185 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+@import url(//db.onlinewebfonts.com/c/9469d225bfc0b31452c39c31f1463681?family=Berthold+Akzidenz+Grotesk+BE);
+@font-face {
+  font-family: "Berthold Akzidenz Grotesk BE Medium Extended"; 
+  src: url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.eot"); src: url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.woff") format("woff"), url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9469d225bfc0b31452c39c31f1463681.svg#Berthold Akzidenz Grotesk BE") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/2b2a97ab2c967477de4f982e36c934b6?family=Berthold+Akzidenz+Grotesk+BE);
+@font-face {font-family: "Berthold Akzidenz Grotesk BE Light Extended"; src: url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.eot"); src: url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.woff") format("woff"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.svg#Berthold Akzidenz Grotesk BE") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/97dd497d97b0ae7a11e7d789c12a22fa?family=NimbusSanDW01);
+@font-face {font-family: "NimbusSanDW01"; src: url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.eot"); src: url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.woff") format("woff"), url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/97dd497d97b0ae7a11e7d789c12a22fa.svg#NimbusSanDW01") format("svg"); }
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section h3 {
+  margin-bottom: 10;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  font-size:0.5em;
+  background-color: #EEE;
+  padding: 1.5em 1.75em;
+  margin:1em;
+}
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+
+.button-nav, nav a {
+  display: inline-block;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  padding: 2em;
+}
+
+.button-nav:hover, .button-nav:focus, nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
+
+.hyperlink {
+  display: inline-block;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+.button-submit {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 1.5em 4em;
+  color:rgb(0,0,0);
+  border: 1px solid;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-submit:hover, .button-submit:focus {
+  background-color: black;
+  color:white;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+h1 {
+  font-family: Berthold Akzidenz Grotesk BE Medium Extended;
+}
+
+h2, a {
+  font-family: Berthold Akzidenz Grotesk BE Light Extended;
+}
+
+h3, p, ul, ol, li, {
+  font-family: NimbusSanDW01;
+}
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.nav-main-item {
+  display: inline-block;
+  padding: 2em;
+}
+
+.nav-main-item-logo{
+  font-size: 2em;
+}
+
+
+.product-listing{
+  display: inline-flex;
+  max-width: 100%;
+}
+
+
+.block{
+  display: inline-block;
+  margin-right: 1em;
+}
+
+
+h5 {
+  margin: 0%;
+  margin-bottom: 0.5em;
+}
+
+.price-listing {
+  font-weight: normal;
+  font-family: NimbusSanDW01;
+}
+
+.product-label {
+  margin-top:1em;
+  margin-bottom: 1em;
+  font-family:Berthold Akzidenz Grotesk BE Medium Extended;
+}
+
+img {
+  width: 24em;
+  height: 24em;
+}
+
+.block:hover{
+  text-decoration: underline;
+}
+
+
+.colour-swatch, .guides {
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
