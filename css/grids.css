@@ -1,0 +1,44 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+	grid-template-columns: 13% 13% 13% 22% 13% 13% 13%;
+}
+
+
+.grid-col-1of7 {
+	width: 100%;
+	float: inline-block;
+}
+
+.grid-col-1of7 > .nav-main-item {
+	width: 100%;
+}
+
+
+
+
+/*@media (min-width: 48.75em) {
+	.grid-col-1of7 {
+		width: 50%;
+	}
+}*/
+
+
+
+
+@media (min-width: 63em) {
+	.grid-col-1of7 {
+		width: 14.28%;
+	}
+
+}
