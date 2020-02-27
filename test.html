@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <style>
+
+      html {
+        margin: 0;  
+       }
+
+      img.bg {
+      /* Set rules to fill background */
+      min-height: 100%;
+      min-width: 1024px;
+      z-index: -1;
+      
+      /* Set up proportionate scaling */
+      width: 100%;
+      height: auto;
+      
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    @media screen and (max-width: 1024px) { /* Specific to this particular image */
+      img.bg {
+        left: 50%;
+        margin-left: -512px;   
+      }
+    }
+
+
+
+  .container .title-text {
+    position: absolute;
+    bottom: 15rem;
+    left: 5rem;
+    width: 55%;
+  }
+
+  .container .button-submit-home {
+    padding: 1.5em 4em;
+    position: absolute;
+    bottom: 10rem;
+    left: 5rem;
+    font-family: Berthold Akzidenz Grotesk BE Light Extended;
+    background-color: none;
+    border: 2px solid black;
+    color: black;
+  }
+
+
+  </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <img src="img/cover4.jpg" class="bg">
+       <div class="title-text"> 
+            <h1> CREATING MINDFUL PRODUCTS WITH NATURAL RAW MATERIALS, STRIKING COLOURS AND BOLD SHAPES. </h1>
+        </div>
+        <a class="button-submit-home" href="#">SHOP ONLINE</a>
+    </div>
+
+
+
+  </body>
+
+</html>
